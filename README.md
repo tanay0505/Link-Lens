@@ -2,6 +2,7 @@
 
 A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
 
+
 ## Features
 
 - JWT Authentication (register, login, refresh, logout)
@@ -13,6 +14,7 @@ A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
 - Automatic cache fallback to PostgreSQL if Redis is unavailable
 - Rate limiting per IP
 - 18 automated tests
+
 
 ## Architecture
 
@@ -50,6 +52,7 @@ graph TD
 | DELETE | /api/v1/urls/{short_code} | Deactivate URL       |
 | PATCH  | /api/v1/urls/{short_code} | Update alias/expiry  |
 
+
 ### Analytics
 
 | Method | Endpoint                                 | Description    |
@@ -58,7 +61,6 @@ graph TD
 | GET    | /api/v1/analytics/{short_code}/timeline  | Clicks per day |
 | GET    | /api/v1/analytics/{short_code}/referrers | Top referrers  |
 
-18 tests covering auth, URL shortening, redirects, and analytics.
 
 ## Tech Stack
 
