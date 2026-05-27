@@ -1,6 +1,7 @@
 # LinkLens
 
 A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
+
 <br>
 
 ## Features
