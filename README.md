@@ -1,7 +1,7 @@
 # LinkLens
 
 A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
-
+<br>
 
 ## Features
 
@@ -15,6 +15,7 @@ A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
 - Rate limiting per IP
 - 18 automated tests
 
+<br>
 
 ## Architecture
 
@@ -30,6 +31,7 @@ graph TD
     ClickTracker -->|Save click| PostgreSQL
     FastAPI -->|Token blacklist| Redis
 ```
+<br>
 
 ## API Endpoints
 
@@ -61,6 +63,7 @@ graph TD
 | GET    | /api/v1/analytics/{short_code}/timeline  | Clicks per day |
 | GET    | /api/v1/analytics/{short_code}/referrers | Top referrers  |
 
+<br>
 
 ## Tech Stack
 
@@ -74,4 +77,4 @@ graph TD
 | Migrations | Alembic                 |
 | Testing    | pytest + pytest-asyncio |
 | Container  | Docker + Docker Compose |
-| Deploy     | AWS EC2 (Ubuntu 22.04)  |
+| Deploy     | AWS EC2 |
