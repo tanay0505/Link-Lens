@@ -14,20 +14,6 @@ A production-grade URL shortner built with FastAPI, PostgreSQL, and Redis.
 - Rate limiting per IP
 - 18 automated tests
 
-## Tech Stack
-
-| Layer      | Technology              |
-| ---------- | ----------------------- |
-| Backend    | FastAPI (Python 3.11)   |
-| Database   | PostgreSQL 16           |
-| Cache      | Redis 7                 |
-| Auth       | JWT (python-jose)       |
-| ORM        | SQLAlchemy 2.0 (async)  |
-| Migrations | Alembic                 |
-| Testing    | pytest + pytest-asyncio |
-| Container  | Docker + Docker Compose |
-| Deploy     | AWS EC2 (Ubuntu 22.04)  |
-
 ## Architecture
 
 ```mermaid
@@ -73,3 +59,17 @@ graph TD
 | GET    | /api/v1/analytics/{short_code}/referrers | Top referrers  |
 
 18 tests covering auth, URL shortening, redirects, and analytics.
+
+## Tech Stack
+
+| Layer      | Technology              |
+| ---------- | ----------------------- |
+| Backend    | FastAPI (Python 3.11)   |
+| Database   | PostgreSQL 16           |
+| Cache      | Redis 7                 |
+| Auth       | JWT (python-jose)       |
+| ORM        | SQLAlchemy 2.0 (async)  |
+| Migrations | Alembic                 |
+| Testing    | pytest + pytest-asyncio |
+| Container  | Docker + Docker Compose |
+| Deploy     | AWS EC2 (Ubuntu 22.04)  |
