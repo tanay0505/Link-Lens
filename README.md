@@ -70,12 +70,12 @@ graph TD
 
 | Layer      | Technology              |
 | ---------- | ----------------------- |
-| Backend    | FastAPI (Python 3.11)   |
-| Database   | PostgreSQL 16           |
-| Cache      | Redis 7                 |
-| Auth       | JWT (python-jose)       |
-| ORM        | SQLAlchemy 2.0 (async)  |
+| Backend    | FastAPI                 |
+| Database   | PostgreSQL              |
+| Cache      | Redis                   |
+| Auth       | JWT                     |
+| ORM        | SQLAlchemy              |
 | Migrations | Alembic                 |
 | Testing    | pytest + pytest-asyncio |
-| Container  | Docker + Docker Compose |
-| Deploy     | AWS EC2 |
+| Container  | Docker                  |
+| Deploy     | AWS EC2                 |
